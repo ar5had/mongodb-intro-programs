@@ -8,10 +8,10 @@ mongo.connect(url, function(err, db){
     var collection = db.collection('users');
     
     collection.update({
-        "username" : 'tinatime'   
+        username : 'tinatime'   
     },{
         $set: {
-            "age" : 40
+            age : 40
         } 
     }, function(err, data){
         if(err)
